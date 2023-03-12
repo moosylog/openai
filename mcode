@@ -1,0 +1,30 @@
+// This function sends a message to the OpenAI GPT-3 API using the provided API key, role, and content,
+// and returns the response as a table.
+
+(apikey as any, apirole as any, apicontent as any) =>
+let
+
+  // Define the request parameters
+  req = [
+     openai_url     = "https://api.openai.com/v1/chat/completions",
+     openai_headers = [#"Authorization" = "Bearer " & apikey,#"Content-Type" = "application/json"],
+     openai_payload = "{""model"": ""gpt-3.5-turbo"", ""messages"": [{""role"": """&apirole&""", ""content"": """&apicontent&"""}]}",
+     openai_params  = [Headers = openai_headers, Content = Text.ToBinary(openai_payload)]
+  ],
+  
+  // Send the HTTP POST request to the OpenAI API endpoint and parse the response as JSON
+  response = Web.Contents(req[openai_url], req[openai_params]),
+  statusCode = Value.Metadata(response)[Response.Status],
+  content = 
+    if statusCode = 200 then
+      Json.Document(response)
+        else if statusCode = 404 then
+            "Not found"
+        else if statusCode >= 500 then
+            "Server error"
+        else
+            null
+ 
+in
+// Return string
+content[choices]{0}[message]
