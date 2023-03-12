@@ -1,2 +1,2 @@
 # openai
-openai playground
+openai excel power query m-code example
