@@ -7,9 +7,9 @@ The M-code script can also be used in Microsoft Power BI.
 
 Instruction can be found in the sheet:
 
-[Download xlsm sample](https://github.com/moosylog/openai/blob/main/chatgpt%20basic%20v1.xlsm?raw=true)
+[Download xlsm sample sheet](https://github.com/moosylog/openai/blob/main/chatgpt%20basic%20v1.xlsm?raw=true)
 
-[Look at the m-code](https://github.com/moosylog/openai/blob/main/mcode)
+[Show me the M-code function](https://github.com/moosylog/openai/blob/main/mcode)
 
 
 
