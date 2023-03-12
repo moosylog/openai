@@ -1,5 +1,6 @@
 // This function sends a message to the OpenAI GPT-3 API using the provided API key, role, and content,
 // and returns the response as a table.
+// by Moosy Research - 2023
 
 (apikey as any, apirole as any, apicontent as any) =>
 let
