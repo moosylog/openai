@@ -1,7 +1,7 @@
 # OpenAI (ChatGPT) from Excel or Power BI (M-code) using Power Query
 
-This is a simple example of how to use the API from Microsoft Excel without any macros, but by using Power Query. 
-With some small adjustments, the code can be used in Microsoft Power BI.
+This is a simple example of how to use the OpenAI (ChatGPT) API from Microsoft Excel without any macros, but by using Power Query. 
+The M-code script can also be used in Microsoft Power BI.
 
 
 
