@@ -7,7 +7,7 @@ Please **★ Star** on the top of this page if you like this and want to motivat
 
 Instruction can be found in the sheet:
 
-[Download xlsm sample sheet](https://github.com/moosylog/openai/blob/main/chatgpt%20basic%20v1.xlsm?raw=true)
+[Download Excel sample sheet](https://github.com/moosylog/openai/blob/main/chatgpt%20basic%20v1.xlsm?raw=true)
 
 [Show me the M-code function](https://github.com/moosylog/openai/blob/main/mcode)
 
